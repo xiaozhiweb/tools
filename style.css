@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    margin: 0px;
+    background-color: #000;
+}
+
+#moon {
+    max-width: 784px;
+    min-height: 784px;
+    background-image: url(img/0.png);
+    background-repeat: no-repeat;
+    margin:0px auto;
+}
+
+#t {
+    color: #fff;
+}
