@@ -12,6 +12,10 @@ body {
     margin:0px auto;
 }
 
-#t {
+.t {
     color: #fff;
+}
+
+p {
+    font-size: 6px;
 }
