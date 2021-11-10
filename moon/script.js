@@ -3,11 +3,19 @@ var d = new Date().toLocaleString('ja-JP-u-ca-chinese');
 var nowdate = get(d);
 
 function get (dd) {
-    if (dd.substring(6,7) == '日') {
-        return Number(dd.substring(5,6));
+    if (dd.substring(4, 5) == '月') {
+        if (dd.substring(6, 7) == '日') {
+            return Number(dd.substring(5, 6));
+        }else{
+            return Number(dd.substring(5, 7));
+        };
     }else{
-        return Number(dd.substring(5,7));
-    };
+        if (dd.substring(6, 7) == '日') {
+            return Number(dd.substring(6, 7));
+        }else{
+            return Number(dd.substring(6, 8));
+        };
+    }
 };
 
 function inRange(x, min, max) {
